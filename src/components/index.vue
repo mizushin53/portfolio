@@ -7,7 +7,7 @@ import { ref } from 'vue'
 <h1>瑞心-MIZUSHIN-</h1>
 
 <section id="about">
-  <h2 id="title">About</h2>
+  <h2>About</h2>
   <p class="txtBox">
     埼玉県出身のエンジニア<br>
     2020年からSIerに入社し、約2年ほどIT業界に携わる<br>
@@ -28,7 +28,7 @@ import { ref } from 'vue'
 </section>
 
 <section id="career">
-  <h2 id="title">Career</h2>
+  <h2>Career</h2>
   <div class="card">
   </div>
   <div>
@@ -45,7 +45,7 @@ import { ref } from 'vue'
 
 <section id="skill">
 
-<h2 id="title">SKILL</h2>
+<h2>SKILL</h2>
   <div class="card">
     <p>HTML/CSS</p>
     <p>Javascript</p>
