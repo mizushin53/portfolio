@@ -44,16 +44,13 @@ import { ref } from 'vue'
 </section>
 
 <section id="skill">
-
-<h2>SKILL</h2>
-  <div class="card">
-    <p>HTML/CSS</p>
-    <p>Javascript</p>
-    <p>React</p>
-    <p>Vue</p>
-    <p>Java</p>
-    <p>ITパスポート</p>
-  </div>
+  <h2>SKILL</h2>
+  <p>HTML/CSS</p>
+  <p>Javascript</p>
+  <p>React</p>
+  <p>Vue</p>
+  <p>Java</p>
+  <p>ITパスポート</p>
 </section>
 </template>
 
