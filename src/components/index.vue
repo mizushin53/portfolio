@@ -45,12 +45,23 @@ import { ref } from 'vue'
 
 <section id="skill">
   <h2>SKILL</h2>
-  <p>HTML/CSS</p>
+  <div class="card">
+    <p>HTML</p>
+    <p>使用期間：2年</p>
+  </div>
+  
+  <p>CSS</p>
+  <p>使用期間：2年</p>
   <p>Javascript</p>
+  <p>使用期間：1年半</p>
   <p>React</p>
+  <p>使用期間：半年</p>
   <p>Vue</p>
+  <p>使用期間：2カ月</p>
   <p>Java</p>
+  <p>使用期間：1年</p>
   <p>ITパスポート</p>
+  <p>取得2020年4月〜</p>
 </section>
 </template>
 
@@ -67,8 +78,10 @@ h1 {
 
 h2 {
   margin:0 0 70px 0;
-  font-size:46px;
+  font-size:36px;
   text-align:left;
+  color: #333;
+  border-bottom: 3px solid #ccc;
 } 
 
 h3 {
@@ -90,6 +103,6 @@ p {
 }
 
 .card {
-  display:flex;
+  
 }
 </style>
