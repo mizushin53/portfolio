@@ -30,9 +30,6 @@ import { ref } from 'vue'
 <section id="career">
   <h2 id="title">Career</h2>
   <div class="card">
-    <p>所属</p>
-    <p>期間</p>
-    <p>内容</p>
   </div>
   <div>
     <p class="period">2020/4〜2022/2</p>
