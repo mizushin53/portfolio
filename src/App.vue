@@ -11,6 +11,6 @@ import index from './components/index.vue'
   
 }
 html {
-  background-color: #eaf4fc;
+  background-color: #fef4f4;
 }
 </style>

@@ -4,38 +4,50 @@ import { ref } from 'vue'
 </script>
 
 <template>
-<div id="about">
-  <h2 id="title">About me</h2>
-  <div class="card">
-    <p id="name">NAME:</p>
-    <p >mizushin(Yu Ikejima)</p>
-    <p >AGE:25(May 3,1996)</p>
-    <p>
-      link:
-      <a href="https://github.com/mizushin53" target="_blank">GitHub</a>
-      |
-      <a href="https://twitter.com/mzsn53" target="_blank">Twitter</a>
-      |
-      <a href="https://qiita.com/mizushin53" target="_blank">Qiita</a>
-    </p>
-  </div>
-</div>
+<h1>瑞心-MIZUSHIN-</h1>
 
-<div id="career">
+<section id="about">
+  <h2 id="title">About</h2>
+  <p class="txtBox">
+    埼玉県出身のエンジニア<br>
+    2020年からSIerに入社し、約2年ほどIT業界に携わる<br>
+    2022年の3月よりフルスタックエンジニアになることを目標に転職活動中(2022/4現在)
+  </p>
+  <div>
+    <dl>
+      <dt>名前 :</dt>
+      <dd>MIZUSHIN</dd>
+      <dt>所在 :</dt>
+      <dd>埼玉県</dd>
+      <dt>年齢 :</dt>
+      <dd>25(1996/5/3)</dd>
+      <dt>Twitter :</dt>
+      <dd><a href="https://twitter.com/mzsn53" target="_blank">＠mzsn53</a></dd>
+    </dl>
+  </div>
+</section>
+
+<section id="career">
   <h2 id="title">Career</h2>
   <div class="card">
+    <p>所属</p>
+    <p>期間</p>
+    <p>内容</p>
+  </div>
+  <div>
     <p class="period">2020/4〜2022/2</p>
-    <h3>中小SIer</h3>
-    <p class="text">新卒で中小のSIerへ入社。主に公共機関向けに開発、保守・運用を行う。また社内の案件でWordpressとReact Nativeでの開発も担当</p>
-    <p class="period">2015/4〜2020/3</p>
-    <h3>桜美林大学</h3>
-    <p class="text">
-    ビジネスマネジメント学群へ入学。専攻科目はICTビジネス
+    <h3>SIer</h3>
+  <div>
+    <p class="txtBox">
+      新卒でSIerへ入社。主に公共機関向けに開発、保守・運用を担当<br>
+      また社内の案件でWordpressとReact Nativeでの開発も経験
     </p>
   </div>
-</div>
+  </div>
+</section>
 
-<div id="skill">
+<section id="skill">
+
 <h2 id="title">SKILL</h2>
   <div class="card">
     <p>HTML/CSS</p>
@@ -45,31 +57,45 @@ import { ref } from 'vue'
     <p>Java</p>
     <p>ITパスポート</p>
   </div>
-</div>
+</section>
 </template>
 
 <style scoped>
-
-#title {
-  margin:0px;
-  font-size:250%;
+section {
+  max-width: 1080px;
+  display: blick;
+  margin: 0 auto;
 }
+
+h1 {
+  margin-bottom: 30px;
+}
+
+h2 {
+  margin:0 0 70px 0;
+  font-size:46px;
+  text-align:left;
+} 
 
 h3 {
   margin:0px;
-  font-size:250%
-}
-#name {
-  color:#19448e;
-  border: solid;
-}
-.card{
-  text-align: left;
-  border: solid;
+  font-size: 30px;
 }
 
-.career {
-  border: solid;
+p {
+  margin: 0;
 }
 
+.txtBox {
+  margin-bottom: 30px;
+  font-size:18px;
+}
+
+.period {
+  font-size:16px;
+}
+
+.card {
+  display:flex;
+}
 </style>
