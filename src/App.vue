@@ -7,10 +7,7 @@ import index from './components/index.vue'
 </template>
 
 <style>
-#app {
-  
-}
 html {
-  background-color: #fef4f4;
+  background-color: #ffffff;
 }
 </style>
