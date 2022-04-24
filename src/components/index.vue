@@ -1,13 +1,10 @@
 <script setup lang="ts">
-import { ref } from 'vue'
-
 </script>
 
 <template>
 <h1>瑞心-MIZUSHIN-</h1>
-
 <section id="about">
-  <h2 id="title">About</h2>
+  <h2>About</h2>
   <p class="txtBox">
     埼玉県出身のエンジニア<br>
     2020年からSIerに入社し、約2年ほどIT業界に携わる<br>
@@ -28,9 +25,7 @@ import { ref } from 'vue'
 </section>
 
 <section id="career">
-  <h2 id="title">Career</h2>
-  <div class="card">
-  </div>
+  <h2>Career</h2>
   <div>
     <p class="period">2020/4〜2022/2</p>
     <h3>SIer</h3>
@@ -44,20 +39,91 @@ import { ref } from 'vue'
 </section>
 
 <section id="skill">
-
-<h2 id="title">SKILL</h2>
-  <div class="card">
-    <p>HTML/CSS</p>
-    <p>Javascript</p>
-    <p>React</p>
-    <p>Vue</p>
-    <p>Java</p>
-    <p>ITパスポート</p>
-  </div>
+  <h2>SKILL</h2>
+  <h3>programming language</h3>
+  <ul class="cards">
+    <li class="card">
+      <img class="icon" src="../assets/html5-brands.svg">
+      <p class="title01">HTML</p>
+      <p class="cardTxt"></p>
+    </li>
+    <li class="card">
+      <img class="icon" src="../assets/css3-alt-brands.svg">
+      <p class="title01">CSS</p>
+      <p class="cardTxt"></p>
+    </li>
+    <li class="card">
+      <img class="icon" src="../assets/js-square-brands.svg">
+      <p class="title01">Javascript</p>
+      <p class="cardTxt"></p>
+    </li>
+    <li class="card">
+      <img class="icon" src="../assets/java-brands.svg">
+      <p class="title01">Java</p>
+      <p class="cardTxt"></p>
+    </li>
+    <li class="card">
+      <img class="icon" src="../assets/react-brands.svg">
+      <p class="title01">React</p>
+      <p class="cardTxt"></p>
+    </li>
+    <li class="card">
+      <img class="icon" src="../assets/vuejs-brands.svg">
+      <p class="title01">Vue</p>
+      <p class="cardTxt"></p>
+    </li>
+    <li class="card">
+      <img class="icon" src="../assets/database-solid.svg">
+      <p class="title01">SQL</p>
+      <p class="cardTxt"></p>
+    </li>
+  </ul>
 </section>
 </template>
 
 <style scoped>
+ul {
+  display: flex;
+}
+.cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* justify-content: space-around; */
+}
+.card {
+  align-items: center;
+  justify-content: center;
+  margin: 12px;
+  width: 150px;
+  height: 242.7px;
+  list-style: none;
+  transition: box-shadow 0.3s;
+}
+
+.cord:hover {
+  box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+.icon {
+  width: 80px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+.title01 {
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.cardTxt {
+  font-size: 14px;
+  text-align: center;
+}
+
 section {
   max-width: 1080px;
   display: blick;
@@ -69,9 +135,11 @@ h1 {
 }
 
 h2 {
-  margin:0 0 70px 0;
-  font-size:46px;
+  margin:0 0 30px 0;
+  font-size:36px;
   text-align:left;
+  color: #333;
+  border-bottom: 3px solid #ccc;
 } 
 
 h3 {
@@ -92,7 +160,5 @@ p {
   font-size:16px;
 }
 
-.card {
-  display:flex;
-}
+
 </style>
