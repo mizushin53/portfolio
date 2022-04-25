@@ -2,7 +2,12 @@
 </script>
 
 <template>
-<h1>瑞心-MIZUSHIN-</h1>
+<header>
+  <h1>瑞心-MIZUSHIN-</h1>
+  <a href=""><img class="linkIcon" src="../assets/GitHub-logo.png" alt="GitHub"></a>
+  <a href=""><img class="linkIcon" src="../assets/qiita-logo.png" alt="GitHub"></a>
+</header>
+
 <section id="about">
   <h2>私について</h2>
   <p class="txtBox">
@@ -112,6 +117,10 @@
 </template>
 
 <style scoped>
+.linkIcon {
+  width: 30px;
+  margin: 5px;
+}
 .careerPeriod {
   font-size: 12px;
 }
