@@ -4,8 +4,8 @@
 <template>
 <header>
   <h1>瑞心-MIZUSHIN-</h1>
-  <a href=""><img class="linkIcon" src="../assets/GitHub-logo.png" alt="GitHub"></a>
-  <a href=""><img class="linkIcon" src="../assets/qiita-logo.png" alt="GitHub"></a>
+  <a href="https://github.com/mizushin53"><img class="linkIcon" src="../assets/GitHub-logo.png" alt="GitHub"></a>
+  <a href="https://qiita.com/mizushin53"><img class="linkIcon" src="../assets/qiita-logo.png" alt="GitHub"></a>
 </header>
 
 <section id="about">
