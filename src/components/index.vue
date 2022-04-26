@@ -1,11 +1,12 @@
 <script setup lang="ts">
+import getAge from "./scripts/age"
 </script>
 
 <template>
 <header>
   <h1>瑞心-MIZUSHIN-</h1>
-  <a href="https://github.com/mizushin53"><img class="linkIcon" src="../assets/GitHub-logo.png" alt="GitHub"></a>
-  <a href="https://qiita.com/mizushin53"><img class="linkIcon" src="../assets/qiita-logo.png" alt="GitHub"></a>
+  <a href="https://github.com/mizushin53" target="_blank"><img class="linkIcon" src="../assets/GitHub-logo.png" alt="GitHub"></a>
+  <a href="https://qiita.com/mizushin53" target="_blank"><img class="linkIcon" src="../assets/qiita-logo.png" alt="GitHub"></a>
 </header>
 
 <section id="about">
@@ -22,7 +23,7 @@
       <dt>所在 :</dt>
       <dd>埼玉県</dd>
       <dt>年齢 :</dt>
-      <dd>25(1996/5/3)</dd>
+      <dd>{{getAge(1996,5,3)}}(1996/5/3)</dd>
       <dt>Twitter :</dt>
       <dd><a href="https://twitter.com/mzsn53" target="_blank">＠mzsn53</a></dd>
     </dl>
