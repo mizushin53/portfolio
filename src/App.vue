@@ -30,7 +30,7 @@ body{
 }
 nav {
   margin: 27px auto 0;
-  font-size: 3vw;
+  font-size: clamp(20px, 2vw, 40px);
   position: absolute;
   bottom:5%;
   left: 50%;
@@ -38,7 +38,7 @@ nav {
 }
 
 footer {
-  font-size: 1.5vw;
+  font-size: clamp(8px, 2vw, 24px);
   position: absolute;
   bottom:0%;
   left: 50%;
