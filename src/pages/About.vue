@@ -127,8 +127,7 @@ export default {
   <div class="section">
     <h2>スキル</h2>
     <h3>プログラミング言語</h3>
-    <template v-for="item in skillItems" :key="item.id">
-      
+    <template v-for="item in skillItems" :key="item.id">   
       <dl v-if="item.category === 'programmingLanguage'">
         <dt>
           {{ item.title }}
@@ -137,8 +136,7 @@ export default {
       </dl>
     </template>
     <h3>ライブラリ</h3>
-    <template v-for="item in skillItems" :key="item.id">
-      
+    <template v-for="item in skillItems" :key="item.id">      
       <dl v-if="item.category === 'library'">
         <dt>
           {{ item.title }}
@@ -166,13 +164,13 @@ h1 {
 }
 
 h2 {
-  font-size: clamp(15px, 2vw, 40px);
+  font-size: clamp(15px, 2vw, 30px);
   text-align: left;
   border-bottom: solid 2px;
 }
 
 h3 {
-  font-size: clamp(12px, 2vw, 30px);
+  font-size: clamp(12px, 2vw, 18px);
   margin: 1px;
   text-align: left;
 }
@@ -206,6 +204,7 @@ dd {
   font-size: 0.6vw;
 }
 .company {
+  font: bold;
   margin: 0;
   font-size: clamp(20px, 2vw, 22px);
 }
