@@ -16,7 +16,7 @@ export default {
         {
           id: 3,
           title: '職業:',
-          description: 'なし(転職活動中)'
+          description: '(転職活動中)'
         },
         {
           id: 4,
@@ -30,6 +30,64 @@ export default {
           period: '2020/4~2022/2',
           title: 'SIer',
           description: '新卒でSIerへ入社。主に公共機関向けに開発、保守・運用を担当\nまた社内の案件でWordpressとReact Nativeでの開発も経験'
+        },
+      ],
+      skillItems: [
+        {
+          id: 1,
+          title: 'HTML',
+          icon: '',
+          description: '',
+          category: 'other'
+        },
+        {
+          id: 2,
+          title: 'CSS',
+          icon: '',
+          description: '',
+          category: 'other'
+        },
+        {
+          id: 3,
+          title: 'Javascript',
+          icon: '',
+          description: '',
+          category: 'programmingLanguage'
+        },
+        {
+          id: 4,
+          title: 'React',
+          icon: '',
+          description: '',
+          category: 'library'
+        },
+        {
+          id: 5,
+          title: 'Java',
+          icon: '',
+          description: '',
+          category: 'programmingLanguage'
+        },
+        {
+          id: 6,
+          title: 'SQL',
+          icon: '',
+          description: '',
+          category: 'other'
+        },
+        {
+          id: 7,
+          title: 'Git',
+          icon: '',
+          description: '',
+          category: 'other'
+        },
+        {
+          id: 8,
+          title: 'Vue',
+          icon: '',
+          description: '',
+          category: 'library'
         },
       ]
     }
@@ -68,10 +126,31 @@ export default {
 
   <div class="section">
     <h2>スキル</h2>
-    <template v-for="item in items" :key="item.id">
-      <dl>
+    <h3>プログラミング言語</h3>
+    <template v-for="item in skillItems" :key="item.id">
+      
+      <dl v-if="item.category === 'programmingLanguage'">
         <dt>
-          {{ item.name }}
+          {{ item.title }}
+        </dt>
+        <dd>{{ item.description }}</dd>
+      </dl>
+    </template>
+    <h3>ライブラリ</h3>
+    <template v-for="item in skillItems" :key="item.id">
+      
+      <dl v-if="item.category === 'library'">
+        <dt>
+          {{ item.title }}
+        </dt>
+        <dd>{{ item.description }}</dd>
+      </dl>
+    </template>
+    <h3>その他</h3>
+    <template v-for="item in skillItems" :key="item.id"> 
+      <dl v-if="item.category === 'other'">
+        <dt>
+          {{ item.title }}
         </dt>
         <dd>{{ item.description }}</dd>
       </dl>
@@ -81,9 +160,21 @@ export default {
 </template>
 
 <style>
+h1 {
+  margin: 0px;
+  font-size: clamp(20px, 2vw, 40px);
+}
+
 h2 {
+  font-size: clamp(15px, 2vw, 40px);
   text-align: left;
   border-bottom: solid 2px;
+}
+
+h3 {
+  font-size: clamp(12px, 2vw, 30px);
+  margin: 1px;
+  text-align: left;
 }
 
 .section {
@@ -107,17 +198,16 @@ dd {
   text-align: left;
   width: 70%;
   white-space: pre-line;
-  /* font-size: 1.5vw; */
-  font-size: clamp(12px, 1vw, 16px);
+  font-size: clamp(11px, 1vw, 16px);
 }
 
 .period {
   margin: 0;
-  font-size: 0.5vw;
+  font-size: 0.6vw;
 }
 .company {
   margin: 0;
-  font-size: clamp(16px, 2vw, 20px);
+  font-size: clamp(20px, 2vw, 22px);
 }
 </style>
 
