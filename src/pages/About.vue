@@ -1,5 +1,4 @@
-<script>
-// import t from "/img/javascript.svg"
+<script lang="ts">
 export default {
   data() {
     return {
