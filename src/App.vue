@@ -6,6 +6,7 @@
     <a><router-link to="/dev">Dev</router-link></a> |
     <a><router-link to="/posts">Posts</router-link></a>
   </nav>
+  <footer></footer>
 </template>
 
 <script lang="ts">
