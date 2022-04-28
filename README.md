@@ -6,5 +6,6 @@ my portfolio https://mizushin.net
 HTML/CSS  
 JavaScript  
 typescript  
-Vue+vite  
+Vue  
+vue-router  
 Netlify
