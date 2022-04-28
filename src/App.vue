@@ -1,20 +1,16 @@
 <template>
-
-  <router-view></router-view>
+  <router-view />
   <nav class="pages">
     <a><router-link to="/">Home</router-link></a> |
     <a><router-link to="/about">About</router-link></a> |
     <a><router-link to="/dev">Dev</router-link></a> |
     <a><router-link to="/posts">Posts</router-link></a>
   </nav>
-  <footer>
-    <p>© 2022 MIZUSHIN. All rights reserved.</p>
-  </footer>
 </template>
 
 <script lang="ts">
 export default {
-  name: 'App'
+  name: 'App',
 }
 </script>
 
@@ -23,9 +19,9 @@ html {
   margin: 0;
   padding: 0;
   border: 0;
-} 
+}
 
-body{
+body {
   margin: 0;
   padding: 0;
   border: 0;
@@ -36,7 +32,7 @@ body{
   margin: 10px auto;
   font-size: clamp(10px, 2vw, 30px);
   position: absolute;
-  bottom:5%;
+  bottom: 5%;
   left: 50%;
   transform: translate(-50%);
 }
@@ -45,7 +41,7 @@ footer {
   margin: 0;
   font-size: clamp(8px, 2vw, 14px);
   position: absolute;
-  bottom:0%;
+  bottom: 0%;
   left: 50%;
   transform: translate(-50%);
 }
@@ -59,6 +55,5 @@ footer {
   text-align: center;
   color: #2c3e50;
   /* font-size:2em; */
-  
 }
 </style>

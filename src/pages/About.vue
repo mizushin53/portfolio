@@ -6,76 +6,78 @@ export default {
         {
           id: 1,
           title: '名称:',
-          description: 'MIZUSHIN'
+          description: 'MIZUSHIN',
         },
         {
           id: 2,
           title: '所在:',
-          description: '埼玉県'
+          description: '埼玉県',
         },
         {
           id: 3,
           title: '職業:',
-          description: '(転職活動中)'
+          description: '(転職活動中)',
         },
         {
           id: 4,
           title: '私について:',
-          description: '埼玉県出身のエンジニア\n2020年からSIerに入社し、約2年ほどIT業界に携わる\n2022年の3月よりフルスタックエンジニアになることを目標に転職活動中(2022/4現在)'
-        }
+          description:
+            '埼玉県出身のエンジニア\n2020年からSIerに入社し、約2年ほどIT業界に携わる\n2022年の3月よりフルスタックエンジニアになることを目標に転職活動中(2022/4現在)',
+        },
       ],
       careerItems: [
         {
           id: 1,
           period: '2020/4~2022/2',
           title: 'SIer',
-          description: '新卒でSIerへ入社。主に公共機関向けに開発、保守・運用を担当\nまた社内の案件でWordpressとReact Nativeでの開発も経験'
+          description:
+            '新卒でSIerへ入社。主に公共機関向けに開発、保守・運用を担当\nまた社内の案件でWordpressとReact Nativeでの開発も経験',
         },
       ],
       skillItems: [
         {
           id: 1,
           title: 'HTML',
-          category: 'other'
+          category: 'other',
         },
         {
           id: 2,
           title: 'CSS',
-          category: 'other'
+          category: 'other',
         },
         {
           id: 3,
           title: 'Javascript',
-          category: 'programmingLanguage'
+          category: 'programmingLanguage',
         },
         {
           id: 4,
           title: 'React',
-          category: 'library'
+          category: 'library',
         },
         {
           id: 5,
           title: 'Java',
-          category: 'programmingLanguage'
+          category: 'programmingLanguage',
         },
         {
           id: 6,
           title: 'SQL',
-          category: 'other'
+          category: 'other',
         },
         {
           id: 7,
           title: 'Git',
-          category: 'other'
+          category: 'other',
         },
         {
           id: 8,
           title: 'Vue',
-          category: 'library'
+          category: 'library',
         },
-      ]
+      ],
     }
-  }
+  },
 }
 </script>
 
@@ -97,8 +99,12 @@ export default {
       <template v-for="item in careerItems" :key="item.id">
         <dl>
           <dt>
-            <p class="period">{{ item.period }}</p>
-            <p class="company">{{ item.title }}</p>
+            <p class="period">
+              {{ item.period }}
+            </p>
+            <p class="company">
+              {{ item.title }}
+            </p>
           </dt>
           <dd>{{ item.description }}</dd>
         </dl>
@@ -109,25 +115,25 @@ export default {
       <h2>スキル</h2>
       <h3>プログラミング言語</h3>
       <div class="skillList">
-        <template  v-for="item in skillItems" :key="item.id">
-          <div class="skillCard" v-if="item.category === 'programmingLanguage'">
+        <template v-for="item in skillItems" :key="item.id">
+          <div v-if="item.category === 'programmingLanguage'" class="skillCard">
             {{ item.title }}
           </div>
         </template>
       </div>
 
       <h3>ライブラリ</h3>
-          <div class="skillList">
-        <template  v-for="item in skillItems" :key="item.id">
-          <div class="skillCard" v-if="item.category === 'library'">
+      <div class="skillList">
+        <template v-for="item in skillItems" :key="item.id">
+          <div v-if="item.category === 'library'" class="skillCard">
             {{ item.title }}
           </div>
         </template>
       </div>
       <h3>その他</h3>
-          <div class="skillList">
-        <template  v-for="item in skillItems" :key="item.id">
-          <div class="skillCard" v-if="item.category === 'other'">
+      <div class="skillList">
+        <template v-for="item in skillItems" :key="item.id">
+          <div v-if="item.category === 'other'" class="skillCard">
             {{ item.title }}
           </div>
         </template>
@@ -162,7 +168,6 @@ h3 {
 .skillSection {
   margin: 0 auto;
   max-width: 700px;
-
 }
 
 dl {
@@ -177,7 +182,7 @@ dt {
   width: 30%;
 }
 dd {
-  margin:0;
+  margin: 0;
   text-align: left;
   width: 70%;
   white-space: pre-line;
@@ -203,21 +208,8 @@ dd {
   margin: 5px 10px 5px 10px;
   display: flex;
   font-size: clamp(10px, 2vw, 16px);
-  width: calc(100%/3);
+  width: calc(100% / 3);
   text-align: center;
   width: 30vh;
 }
 </style>
-
-
-
-
-
-
-
-
-
-
-
-
-
