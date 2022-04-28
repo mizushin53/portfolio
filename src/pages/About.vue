@@ -1,4 +1,5 @@
 <script>
+// import t from "/img/javascript.svg"
 export default {
   data() {
     return {
@@ -36,57 +37,41 @@ export default {
         {
           id: 1,
           title: 'HTML',
-          icon: '',
-          description: '',
           category: 'other'
         },
         {
           id: 2,
           title: 'CSS',
-          icon: '',
-          description: '',
           category: 'other'
         },
         {
           id: 3,
           title: 'Javascript',
-          icon: '',
-          description: '',
           category: 'programmingLanguage'
         },
         {
           id: 4,
           title: 'React',
-          icon: '',
-          description: '',
           category: 'library'
         },
         {
           id: 5,
           title: 'Java',
-          icon: '',
-          description: '',
           category: 'programmingLanguage'
         },
         {
           id: 6,
           title: 'SQL',
-          icon: '',
-          description: '',
           category: 'other'
         },
         {
           id: 7,
           title: 'Git',
-          icon: '',
-          description: '',
           category: 'other'
         },
         {
           id: 8,
           title: 'Vue',
-          icon: '',
-          description: '',
           category: 'library'
         },
       ]
@@ -124,35 +109,33 @@ export default {
     </template>
   </div>
 
-  <div class="section">
+  <div class="skillSection">
     <h2>スキル</h2>
     <h3>プログラミング言語</h3>
-    <template v-for="item in skillItems" :key="item.id">   
-      <dl v-if="item.category === 'programmingLanguage'">
-        <dt>
+    <div class="skillList">
+      <template  v-for="item in skillItems" :key="item.id">
+        <div class="skillCard" v-if="item.category === 'programmingLanguage'">
           {{ item.title }}
-        </dt>
-        <dd>{{ item.description }}</dd>
-      </dl>
-    </template>
+        </div>
+      </template>
+    </div>
+
     <h3>ライブラリ</h3>
-    <template v-for="item in skillItems" :key="item.id">      
-      <dl v-if="item.category === 'library'">
-        <dt>
+        <div class="skillList">
+      <template  v-for="item in skillItems" :key="item.id">
+        <div class="skillCard" v-if="item.category === 'library'">
           {{ item.title }}
-        </dt>
-        <dd>{{ item.description }}</dd>
-      </dl>
-    </template>
+        </div>
+      </template>
+    </div>
     <h3>その他</h3>
-    <template v-for="item in skillItems" :key="item.id"> 
-      <dl v-if="item.category === 'other'">
-        <dt>
+        <div class="skillList">
+      <template  v-for="item in skillItems" :key="item.id">
+        <div class="skillCard" v-if="item.category === 'other'">
           {{ item.title }}
-        </dt>
-        <dd>{{ item.description }}</dd>
-      </dl>
-    </template>
+        </div>
+      </template>
+    </div>
   </div>
 
 </template>
@@ -171,13 +154,19 @@ h2 {
 
 h3 {
   font-size: clamp(12px, 2vw, 18px);
-  margin: 1px;
+  margin: auto;
   text-align: left;
 }
 
 .section {
   margin: 0 auto;
   max-width: 700px;
+}
+
+.skillSection {
+  margin: 0 auto;
+  max-width: 700px;
+
 }
 
 dl {
@@ -207,6 +196,20 @@ dd {
   font: bold;
   margin: 0;
   font-size: clamp(20px, 2vw, 22px);
+}
+
+.skillList {
+  margin: 5px;
+  display: flex;
+  border-bottom: dotted 1px;
+}
+.skillCard {
+  margin: 10px 15px 10px 15px;
+  display: flex;
+  font-size: clamp(10px, 2vw, 16px);
+  width: calc(100%/3);
+  text-align: center;
+  width: 30vh;
 }
 </style>
 

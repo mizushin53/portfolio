@@ -1,13 +1,14 @@
 <template>
+
   <router-view></router-view>
   <nav class="pages">
-    <a><router-link to="/">Home</router-link></a>
-    <a><router-link to="/about">About</router-link></a>
-    <a><router-link to="/dev">Dev</router-link></a>
+    <a><router-link to="/">Home</router-link></a> |
+    <a><router-link to="/about">About</router-link></a> |
+    <a><router-link to="/dev">Dev</router-link></a> |
     <a><router-link to="/posts">Posts</router-link></a>
   </nav>
   <footer>
-    © 2022 MIZUSHIN. All rights reserved.
+    <p>© 2022 MIZUSHIN. All rights reserved.</p>
   </footer>
 </template>
 
@@ -20,29 +21,31 @@ html {
   margin: 0;
   padding: 0;
   border: 0;
-  
 } 
 
 body{
   margin: 0;
   padding: 0;
   border: 0;
+  width: 100vw;
+  height: 100vh;
 }
-nav {
-  margin: 27px auto 0;
-  font-size: clamp(20px, 2vw, 40px);
+.pages {
+  margin: 10px auto;
+  font-size: clamp(10px, 2vw, 30px);
   position: absolute;
   bottom:5%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%);
 }
 
 footer {
-  font-size: clamp(8px, 2vw, 24px);
+  margin: 0;
+  font-size: clamp(8px, 2vw, 14px);
   position: absolute;
   bottom:0%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%);
 }
 
 #app {
