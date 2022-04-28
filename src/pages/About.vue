@@ -81,63 +81,60 @@ export default {
 </script>
 
 <template>
-
-  <div>
+  <div class="about">
     <h1>About</h1>
-  </div>
-
-  <div class="section">
-    <h2>プロフィール</h2>
-    <template v-for="item in profileItems" :key="item.id">
-      <dl>
-        <dt>{{ item.title }}</dt>
-        <dd>{{ item.description }}</dd>
-      </dl>
-    </template>
-  </div>
-
-  <div class="section">
-    <h2>経歴</h2>
-    <template v-for="item in careerItems" :key="item.id">
-      <dl>
-        <dt>
-          <p class="period">{{ item.period }}</p>
-          <p class="company">{{ item.title }}</p>
-        </dt>
-        <dd>{{ item.description }}</dd>
-      </dl>
-    </template>
-  </div>
-
-  <div class="skillSection">
-    <h2>スキル</h2>
-    <h3>プログラミング言語</h3>
-    <div class="skillList">
-      <template  v-for="item in skillItems" :key="item.id">
-        <div class="skillCard" v-if="item.category === 'programmingLanguage'">
-          {{ item.title }}
-        </div>
+    <div class="section">
+      <h2>プロフィール</h2>
+      <template v-for="item in profileItems" :key="item.id">
+        <dl>
+          <dt>{{ item.title }}</dt>
+          <dd>{{ item.description }}</dd>
+        </dl>
       </template>
     </div>
 
-    <h3>ライブラリ</h3>
-        <div class="skillList">
-      <template  v-for="item in skillItems" :key="item.id">
-        <div class="skillCard" v-if="item.category === 'library'">
-          {{ item.title }}
-        </div>
+    <div class="section">
+      <h2>経歴</h2>
+      <template v-for="item in careerItems" :key="item.id">
+        <dl>
+          <dt>
+            <p class="period">{{ item.period }}</p>
+            <p class="company">{{ item.title }}</p>
+          </dt>
+          <dd>{{ item.description }}</dd>
+        </dl>
       </template>
     </div>
-    <h3>その他</h3>
-        <div class="skillList">
-      <template  v-for="item in skillItems" :key="item.id">
-        <div class="skillCard" v-if="item.category === 'other'">
-          {{ item.title }}
-        </div>
-      </template>
+
+    <div class="skillSection">
+      <h2>スキル</h2>
+      <h3>プログラミング言語</h3>
+      <div class="skillList">
+        <template  v-for="item in skillItems" :key="item.id">
+          <div class="skillCard" v-if="item.category === 'programmingLanguage'">
+            {{ item.title }}
+          </div>
+        </template>
+      </div>
+
+      <h3>ライブラリ</h3>
+          <div class="skillList">
+        <template  v-for="item in skillItems" :key="item.id">
+          <div class="skillCard" v-if="item.category === 'library'">
+            {{ item.title }}
+          </div>
+        </template>
+      </div>
+      <h3>その他</h3>
+          <div class="skillList">
+        <template  v-for="item in skillItems" :key="item.id">
+          <div class="skillCard" v-if="item.category === 'other'">
+            {{ item.title }}
+          </div>
+        </template>
+      </div>
     </div>
   </div>
-
 </template>
 
 <style>
@@ -154,7 +151,7 @@ h2 {
 
 h3 {
   font-size: clamp(12px, 2vw, 18px);
-  margin: auto;
+  margin: 0px 10px 0px 10px;
   text-align: left;
 }
 
@@ -204,7 +201,7 @@ dd {
   border-bottom: dotted 1px;
 }
 .skillCard {
-  margin: 10px 15px 10px 15px;
+  margin: 5px 10px 5px 10px;
   display: flex;
   font-size: clamp(10px, 2vw, 16px);
   width: calc(100%/3);
