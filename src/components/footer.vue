@@ -9,3 +9,10 @@
     <p>© 2022 MIZUSHIN. All rights reserved.</p>
   </footer>
 </template>
+
+<script lang="ts">
+
+</script>
+
+<style>
+</style>
