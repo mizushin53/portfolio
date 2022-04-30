@@ -10,9 +10,10 @@
   </footer>
 </template>
 
-<script lang="ts">
-
-</script>
 
 <style>
+  .nav {
+    
+  }
+  
 </style>
