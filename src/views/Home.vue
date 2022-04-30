@@ -9,17 +9,15 @@
   margin: 0;
   text-align: center;
   position: absolute;
-  transform: translate(-50%,-50%);
-  top:50%;
+  transform: translate(-50%, -50%);
+  top: 50%;
   left: 50%;
 }
 
 .main {
-    font-size:10vw;
+  font-size: 10vw;
 }
 .mainSub {
-    font-size:2vw;
+  font-size: 2vw;
 }
 </style>
-
-
