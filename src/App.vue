@@ -1,20 +1,21 @@
 <script lang="ts">
-import footer from './components/Footer.vue'
+import Footer from './components/Footer.vue'
 
 export default {
-  name: 'App',
+    name: "App",
+    components: { Footer }
 }
 </script>
 
 <template>
   <router-view />
-  <nav class="pages">
+  <!-- <nav class="pages">
     <a><router-link to="/">Home</router-link></a> |
     <a><router-link to="/about">About</router-link></a> |
     <a><router-link to="/dev">Dev</router-link></a> |
     <a><router-link to="/posts">Posts</router-link></a>
-  </nav>
-  <footer></footer>
+  </nav> -->
+  <Footer></Footer>
 </template>
 
 
