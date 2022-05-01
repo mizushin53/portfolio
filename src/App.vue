@@ -1,3 +1,11 @@
+<script lang="ts">
+import footer from './components/Footer.vue'
+
+export default {
+  name: 'App',
+}
+</script>
+
 <template>
   <router-view />
   <nav class="pages">
@@ -9,11 +17,7 @@
   <footer></footer>
 </template>
 
-<script lang="ts">
-export default {
-  name: 'App',
-}
-</script>
+
 
 <style>
 html {
