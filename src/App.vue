@@ -2,8 +2,8 @@
 import Footer from './components/Footer.vue'
 
 export default {
-    name: "App",
-    components: { Footer }
+  name: 'App',
+  components: { Footer },
 }
 </script>
 
@@ -11,8 +11,6 @@ export default {
   <router-view />
   <Footer></Footer>
 </template>
-
-
 
 <style>
 html {
@@ -28,7 +26,6 @@ body {
   width: 100vw;
   height: 100vh;
 }
-
 
 footer {
   margin: 0;
