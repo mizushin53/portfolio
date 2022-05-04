@@ -6,6 +6,7 @@
 
 <style>
 .mainVisual {
+  color: #38b48b;
   margin: 0;
   text-align: center;
   position: absolute;
