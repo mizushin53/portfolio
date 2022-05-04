@@ -17,15 +17,12 @@
 <style>
   nav {
     text-align: center;
-    /* font-size: 32px; */
-    /* position:relative; */
   }
 
   nav ul {
     margin: 0;
     padding: 0;
-    width: 99.9vw; /* 横幅 */
-    /* background-color: #eaf4fc; */
+    width: 99.9vw;
   }
 
   nav ul li {
@@ -33,8 +30,6 @@
     display: inline-block;
     width: 22vw;
     height: 5vh;
-    /* border: 1px solid #cc0000; */
-    /* background-color: #ffcccc; */
   }
 
   nav ul li  a {
@@ -42,15 +37,12 @@
     text-decoration:none; 
     font-size: clamp(20px, 3vw, 50px);
     color: #38b48b;
-    /* position: absolute;
-    bottom: 0%;
-    transform: translate(-50%); */
   }
 
-    nav ul li:hover {
-    color: azure;
-    background-color: #a0d8ef;
-    transition: 1s;
+    nav ul li a:hover {
+      color: black;
+      background-color: #a0d8ef;
+      transition: 1s;
   }
 
 
