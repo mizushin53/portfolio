@@ -18,14 +18,14 @@
   nav {
     text-align: center;
     /* font-size: 32px; */
-    position:relative;
+    /* position:relative; */
   }
 
   nav ul {
     margin: 0;
     padding: 0;
     width: 99.9vw; /* 横幅 */
-    background-color: #eaf4fc; /* 背景色 */
+    /* background-color: #eaf4fc; */
   }
 
   nav ul li {
@@ -38,12 +38,19 @@
   }
 
   nav ul li  a {
-     font-size: xx-large;
-     position: absolute;
-     bottom: 20%;
-     transform: translate(-50%);
+    display:block;
+    text-decoration:none; 
+    font-size: clamp(20px, 3vw, 50px);
+    color: #38b48b;
+    /* position: absolute;
+    bottom: 0%;
+    transform: translate(-50%); */
+  }
 
-
+    nav ul li:hover {
+    color: azure;
+    background-color: #a0d8ef;
+    transition: 1s;
   }
 
 
