@@ -34,14 +34,7 @@ body {
   width: 100vw;
   height: 100vh;
 }
-.pages {
-  margin: 10px auto;
-  font-size: clamp(10px, 2vw, 30px);
-  position: absolute;
-  bottom: 5%;
-  left: 50%;
-  transform: translate(-50%);
-}
+
 
 footer {
   margin: 0;
