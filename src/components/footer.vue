@@ -25,7 +25,6 @@
     margin: 0;
     padding: 0;
     width: 99.9vw; /* 横幅 */
-    /* max-width: 1200px; */
     background-color: #eaf4fc; /* 背景色 */
   }
 
@@ -34,8 +33,17 @@
     display: inline-block;
     width: 22vw;
     height: 5vh;
-    border: 1px solid #cc0000; /* 枠線 */
-    background-color: #ffcccc; /* 背景色 */
+    /* border: 1px solid #cc0000; */
+    /* background-color: #ffcccc; */
+  }
+
+  nav ul li  a {
+     font-size: xx-large;
+     position: absolute;
+     bottom: 20%;
+     transform: translate(-50%);
+
+
   }
 
 
