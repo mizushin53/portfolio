@@ -8,8 +8,6 @@
         <li><router-link to="/posts">Posts</router-link></li>
       </ul>
     </nav>
-
-    <!-- <p>© 2022 MIZUSHIN. All rights reserved.</p> -->
   </footer>
 </template>
 
@@ -39,7 +37,7 @@
     color: #38b48b;
   }
 
-    nav ul li a:hover {
+  nav ul li a:hover {
       color: black;
       background-color: #a0d8ef;
       transition: 1s;
