@@ -3,7 +3,7 @@ import Footer from './components/Footer.vue'
 
 export default {
   name: 'App',
-  components: { Footer },
+  components: {Footer},
 }
 </script>
 
