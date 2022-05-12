@@ -23,18 +23,11 @@ body {
   margin: 0;
   padding: 0;
   border: 0;
-  width: 100vw;
-  height: 100vh;
+  width: 99vw;
+  height: vh;
 }
 
-footer {
-  margin: 0;
-  font-size: clamp(8px, 2vw, 14px);
-  position: absolute;
-  bottom: 0%;
-  left: 50%;
-  transform: translate(-50%);
-}
+
 
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;

@@ -13,6 +13,15 @@
 
 
 <style>
+  footer {
+    margin: 0;
+    font-size: clamp(8px, 2vw, 14px);
+    position: absolute;
+    bottom: 1%;
+    left: 50%;
+    transform: translate(-50%);
+  }
+
   nav {
     text-align: center;
   }
@@ -20,7 +29,7 @@
   nav ul {
     margin: 0;
     padding: 0;
-    width: 99.9vw;
+    width: 95vw;
   }
 
   nav ul li {
