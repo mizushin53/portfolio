@@ -24,7 +24,6 @@ body {
   padding: 0;
   border: 0;
   width: 99vw;
-  height: vh;
 }
 
 
