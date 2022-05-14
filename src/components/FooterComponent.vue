@@ -8,6 +8,7 @@
         <li><router-link to="/posts">Posts</router-link></li>
       </ul>
     </nav>
+    <p>©mizushin</p>
   </footer>
 </template>
 
