@@ -8,6 +8,11 @@
         <li><router-link to="/posts">Posts</router-link></li>
       </ul>
     </nav>
+    <ul>
+      <li>Twitter</li>
+      <li>Youtube</li>
+      <li>GitHub</li>
+    </ul>
     <p>©mizushin</p>
   </footer>
 </template>
