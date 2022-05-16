@@ -19,7 +19,21 @@
 
 
 <style>
-  footer {
+ ul {
+   text-align: center;
+   border: 1px;
+   border-color: black;
+
+ }
+ ul li {
+
+   border: 1px;
+   list-style: none;
+   display: inline-block;
+   font-size: clamp(8px, 1.5vw, 14px);
+ }
+
+ footer {
     margin: 0;
     font-size: clamp(8px, 2vw, 14px);
     position: absolute;
