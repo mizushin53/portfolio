@@ -20,7 +20,8 @@
 
 <style>
 .sociallink{
-  font-size: clamp(8px, 2vw, 14px);
+  list-style: none;
+  font-size: clamp(8px, 3vw, 16px);
   border: solid;
 
 }
@@ -29,12 +30,12 @@
 
  }
  ul li {
-   font-size: clamp(8px, 2vw, 14px);
+   display: inline-block;
+   width: 12vw;
  }
 
  footer {
     margin: 0;
-    font-size: clamp(8px, 2vw, 14px);
     position: absolute;
     bottom: 1%;
     left: 50%;
