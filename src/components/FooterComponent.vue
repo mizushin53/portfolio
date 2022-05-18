@@ -8,7 +8,7 @@
         <li><router-link to="/posts">Posts</router-link></li>
       </ul>
     </nav>
-    <ul>
+    <ul class="sociallink">
       <li>Twitter</li>
       <li>Youtube</li>
       <li>GitHub</li>
@@ -19,18 +19,17 @@
 
 
 <style>
+.sociallink{
+  font-size: clamp(8px, 2vw, 14px);
+  border: solid;
+
+}
  ul {
    text-align: center;
-   border: 1px;
-   border-color: black;
 
  }
  ul li {
-
-   border: 1px;
-   list-style: none;
-   display: inline-block;
-   font-size: clamp(8px, 1.5vw, 14px);
+   font-size: clamp(8px, 2vw, 14px);
  }
 
  footer {
