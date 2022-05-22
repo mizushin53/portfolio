@@ -9,9 +9,8 @@
       </ul>
     </nav>
     <ul class="sociallink">
-      <li><a href="https://twitter.com">Twitter</a></li>
-      <!-- <li><a>Youtube</a></li> -->
-      <li><a>GitHub</a></li>
+      <li><a href="https://twitter.com/mzsn53">Twitter</a></li>
+      <li><a href="">GitHub</a></li>
     </ul>
     <p class="copyright">©mizushin</p>
   </footer>
