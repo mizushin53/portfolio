@@ -8,14 +8,41 @@
         <li><router-link to="/posts">Posts</router-link></li>
       </ul>
     </nav>
+    <ul class="sociallink">
+      <li><a href="https://twitter.com/mzsn53">Twitter</a></li>
+      <li><a href="">GitHub</a></li>
+    </ul>
+    <p class="copyright">©mizushin</p>
   </footer>
 </template>
 
 
 <style>
-  footer {
+.sociallink{
+  list-style: none;
+  font-size: clamp(8px, 3vw, 16px);
+  margin: 0;
+  padding: 0;
+
+}
+
+.copyright {
+  font-size: clamp(4px, 3vw, 12px);
+  margin: 0;
+  padding: 0;
+}
+
+ ul {
+   text-align: center;
+
+ }
+ ul li {
+   display: inline-block;
+   width: 15vw;
+ }
+
+ footer {
     margin: 0;
-    font-size: clamp(8px, 2vw, 14px);
     position: absolute;
     bottom: 1%;
     left: 50%;
