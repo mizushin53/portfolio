@@ -31,7 +31,7 @@
  }
  ul li {
    display: inline-block;
-   width: 12vw;
+   width: 15vw;
  }
 
  footer {
