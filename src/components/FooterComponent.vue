@@ -9,11 +9,11 @@
       </ul>
     </nav>
     <ul class="sociallink">
-      <li>Twitter</li>
-      <li>Youtube</li>
-      <li>GitHub</li>
+      <li><a href="https://twitter.com">Twitter</a></li>
+      <li><a>Youtube</a></li>
+      <li><a>GitHub</a></li>
     </ul>
-    <p>©mizushin</p>
+    <p class="copyright">©mizushin</p>
   </footer>
 </template>
 
@@ -25,6 +25,11 @@
   border: solid;
 
 }
+
+.copyright {
+  font-size: clamp(4px, 3vw, 12px);
+}
+
  ul {
    text-align: center;
 
