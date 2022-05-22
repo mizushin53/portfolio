@@ -10,7 +10,7 @@
     </nav>
     <ul class="sociallink">
       <li><a href="https://twitter.com">Twitter</a></li>
-      <li><a>Youtube</a></li>
+      <!-- <li><a>Youtube</a></li> -->
       <li><a>GitHub</a></li>
     </ul>
     <p class="copyright">©mizushin</p>
@@ -22,12 +22,15 @@
 .sociallink{
   list-style: none;
   font-size: clamp(8px, 3vw, 16px);
-  border: solid;
+  margin: 0;
+  padding: 0;
 
 }
 
 .copyright {
   font-size: clamp(4px, 3vw, 12px);
+  margin: 0;
+  padding: 0;
 }
 
  ul {
