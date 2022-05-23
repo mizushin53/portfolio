@@ -10,7 +10,7 @@
     </nav>
     <ul class="sociallink">
       <li><a href="https://twitter.com/mzsn53">Twitter</a></li>
-      <li><a href="">GitHub</a></li>
+      <li><a href="https://github.com/mizushin53">GitHub</a></li>
     </ul>
     <p class="copyright">©mizushin</p>
   </footer>
