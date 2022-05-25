@@ -1,6 +1,7 @@
 <template>
   <div>
-    <h1 class="comingSoon">coming soon</h1>
+    <h2>PORTFOLIO(2022)</h2>
+    <a herf="mizushin.net">リンク</a>
   </div>
 </template>
 
