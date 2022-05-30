@@ -1,7 +1,6 @@
 <template>
   <div>
     <h2>PORTFOLIO(2022)</h2>
-    <a herf="mizushin.net">リンク</a>
     <img src="../assets/portfolio2022.png" href="mizushin.net">
   </div>
 </template>
