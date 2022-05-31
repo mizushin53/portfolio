@@ -1,7 +1,7 @@
 <template>
   <div>
-    <h2>PORTFOLIO(2022)</h2>
-    <img src="../assets/portfolio2022.png" href="mizushin.net">
+    <h3>PORTFOLIO(2022)</h3>
+    <img src="../assets/portfolio2022.webp" href="mizushin.net">
   </div>
 </template>
 
