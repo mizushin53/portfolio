@@ -6,13 +6,9 @@
 </template>
 
 <style>
-.comingSoon {
-  margin: 0;
-  text-align: center;
-  position: absolute;
-  transform: translate(-50%, -50%);
-  top: 50%;
-  left: 50%;
+
+h3 {
+  flex: auto;
 }
 
 img {
