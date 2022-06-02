@@ -8,7 +8,7 @@
 <style>
 
 h3 {
-  flex: auto;
+  display: flex;
 }
 
 img {
