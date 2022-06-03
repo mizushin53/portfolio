@@ -17,6 +17,7 @@ html {
   margin: 0;
   padding: 0;
   border: 0;
+  background-color: #eaf4fc;
 }
 
 body {
