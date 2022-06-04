@@ -18,7 +18,7 @@
 h3 {
   font-size: clamp(12px, 2vw, 18px);
   margin: 0px 10px 0px 10px;
-  text-align: flex;
+  text-align: center;
 }
 
 img {
