@@ -16,13 +16,13 @@ export default {
         {
           id: 3,
           title: '職業:',
-          description: '(転職活動中)',
+          description: 'フロントエンドエンジニア',
         },
         {
           id: 4,
           title: '私について:',
           description:
-            '埼玉県出身のエンジニア\n2020年からSIerに入社し、約2年ほどIT業界に携わる\n2022年の3月よりフルスタックエンジニアになることを目標に転職活動中(2022/4現在)',
+            '埼玉県出身のエンジニア\n2020年からSIerに入社し、約2年ほどIT業界に携わる\n2022年の7月よりフロントエンドとして都内の会社に勤務',
         },
       ],
       careerItems: [
@@ -32,6 +32,13 @@ export default {
           title: 'SIer',
           description:
             '新卒でSIerへ入社。主に公共機関向けに開発、保守・運用を担当\nまた社内の案件でWordpressとReact Nativeでの開発も経験',
+        },
+        {
+          id: 1,
+          period: '2022/7~',
+          title: 'SIer',
+          description:
+            'フロントエンドエンジニアとして活動中',
         },
       ],
       skillItems: [
