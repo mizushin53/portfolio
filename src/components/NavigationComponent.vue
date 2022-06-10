@@ -5,4 +5,8 @@
       <li>Dev</li>
       <li>Posts</li>
   </ul>
+  <ul>
+    <li>Twitter</li>
+    <li>GitHub</li>
+  </ul>
 </template>
