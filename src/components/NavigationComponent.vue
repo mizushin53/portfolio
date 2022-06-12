@@ -6,7 +6,7 @@
     <li><router-link to="/posts">Posts</router-link></li>
   </ul>
   <ul>
-    <li>Twitter</li>
-    <li>GitHub</li>
+    <li><a href="https://twitter.com/mzsn53">Twitter</a></li>
+    <li><a href="https://github.com/mizushin53">GitHub</a></li>
   </ul>
 </template>
