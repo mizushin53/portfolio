@@ -10,3 +10,7 @@
     <li><a href="https://github.com/mizushin53">GitHub</a></li>
   </ul>
 </template>
+
+<style>
+  
+</style>
