@@ -31,10 +31,10 @@
     align-items: center;
     z-index: 90;
     background-color: #3584bb;
-}
-.menu-btn span,
-.menu-btn span:before,
-.menu-btn span:after {
+  }
+  .menu-btn span,
+  .menu-btn span:before,
+  .menu-btn span:after {
     content: '';
     display: block;
     height: 3px;
@@ -42,11 +42,11 @@
     border-radius: 3px;
     background-color: #ffffff;
     position: absolute;
-}
-.menu-btn span:before {
+  }
+  .menu-btn span:before {
     bottom: 8px;
-}
-.menu-btn span:after {
+  }
+  .menu-btn span:after {
     top: 8px;
-}
+  }
 </style>
