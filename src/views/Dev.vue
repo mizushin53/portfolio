@@ -26,4 +26,5 @@ img {
   width: 15vw;
   display: flex;
 }
+
 </style>
