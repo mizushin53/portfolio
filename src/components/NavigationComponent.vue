@@ -20,6 +20,13 @@
 </template>
 
 <style>
+a{
+
+}
+
+ul{
+  
+}
   .menu-btn {
     position: fixed;
     top: 10px;
